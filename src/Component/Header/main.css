@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
 .header {
+  position: relative;
   background: #252836;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -21,6 +22,10 @@
 .list {
   margin: 0;
   margin-right: 100px;
+}
+
+.sitenav {
+  display: inline-block;
 }
 
 .sitenav-link-active {
@@ -58,7 +63,7 @@
 .sitenav-input {
   padding: 14px 0;
   background: #ffffff;
-  border: 1px solid #393C49;
+  border: 2px solid #393C49;
   border-radius: 8px;
   max-width: 220px;
   width: 100%;
@@ -71,4 +76,73 @@
 
 .sitenav-input:focus {
   outline: none;
+  border: 2px solid dodgerblue;
+}
+
+.sitenav{
+  display: flex;
+  align-items: center;
+}
+
+.header-hamburger {
+  display: none;
+  background: none;
+  border: transparent;
+  width: 46px;
+  height: 46px;
+  background-image: url(../../assets/images/icon.png);
+  background-repeat: no-repeat;
+  transition: all 0.4s;
+}
+
+.header-hamburger:hover {
+  opacity: 0.6;
+}
+
+.header-hamburger:active {
+  opacity: 0.4;
+}
+
+@media only screen and  (max-width: 991px) {
+
+  .list {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and  (max-width: 772px) {
+
+  .sitenav {
+    display: none;
+  }
+
+  .header-hamburger {
+    display: inline-block;
+  }
+
+  .sitenav-input {
+    margin-top: 10px;
+  }
+
+}
+
+.active {
+  border-top: 2px solid rgb(255, 255, 255);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: #252836;
+}
+
+@media only screen and  (max-width: 500px) {
+
+  .header-img {
+    width: 240px;
+  }
+
 }

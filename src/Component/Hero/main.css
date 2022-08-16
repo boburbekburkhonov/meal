@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+.hero {
+  background: #252836;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.hero-heading {
+  max-width: 980px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 68px;
+  text-align: center;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 773px) {
+
+  .hero {
+    padding-top: 180px;
+  }
+
+  .hero-heading {
+    font-size: 48px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero__container{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+
+  .hero-heading {
+    font-size: 38px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .hero-heading {
+    font-size: 35px;
+  }
+
+}

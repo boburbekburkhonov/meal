@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+.canadian-one {
+  background: #252836;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.one {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.one-heading {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFA844;
+}
+
+.one-desc {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFA844;
+}
+
+.one-heading-into {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.one-desc-into {
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wrapper-into {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.back-btn {
+  background: none;
+  border: transparent;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFA844;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
+
+.back-btn:active {
+  opacity: 0.5;
+}
+
+.back-btn::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  margin-right: 20px;
+  background-image: url(../../assets/images/back.png);
+  background-repeat: no-repeat;
+}

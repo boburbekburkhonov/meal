@@ -4,7 +4,7 @@ import './main.css'
 
 function index(props) {
   return (
-    <div className='hero'>
+    <section className='hero'>
       <div className="container hero__container d-flex justify-content-between align-items-center">
       <img src={mealIcon} alt="meal" width='142' height='142' />
 
@@ -15,7 +15,7 @@ function index(props) {
 
        <img src={mealIcon} alt="meal" width='142' height='142' />
       </div>
-    </div>
+    </section>
   );
 }
 

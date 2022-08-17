@@ -12,6 +12,12 @@
   border-radius: 10px;
 }
 
+.canadian-one-img {
+  max-width: 700px;
+  width: 100%;
+  height: 550px;
+}
+
 .one-heading {
   margin: 0;
   margin-top: 15px;
@@ -49,7 +55,7 @@
 .one-desc-into {
   margin: 0;
   font-family: 'Barlow', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   line-height: 130%;
   text-align: center;
@@ -91,4 +97,56 @@
   margin-right: 20px;
   background-image: url(../../assets/images/back.png);
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 550px){
+
+  .canadian-one-img {
+    height: 400px;
+  }
+
+  .back-btn {
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 450px){
+
+  .canadian-one-img {
+    height: 350px;
+  }
+
+  .one-heading {
+    font-size: 24px;
+  }
+
+  .one-desc {
+    font-size: 20px;
+  }
+
+  .one-heading-into {
+    font-size: 25px;
+  }
+
+  .one-desc-into {
+    font-size: 20px;
+  }
+
+  .back-btn {
+    font-size: 35px;
+  }
+
+  .back-btn::before {
+    margin-right: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 350px){
+
+  .canadian-one-img {
+    height: 300px;
+  }
+
 }

@@ -26,7 +26,7 @@ function index(props) {
         {data.map((item, index) => {
           return <>
           <div key={item.idMeal} className='one d-flex flex-column mx-auto'>
-            <img className='rounded-5' src={item.strMealThumb} alt="canadian-food" width='700' height='550' />
+            <img className='canadian-one-img rounded-5' src={item.strMealThumb} alt="canadian-food" />
             <div className='d-flex'>
             <h2 className='one-heading'>Meal name:</h2>
             <h2 className='one-heading ms-5'>{item.strMeal}</h2>

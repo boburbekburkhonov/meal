@@ -57,8 +57,18 @@
   color: #FFFFFF;
 }
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 768px){
 
+  .canadian-heading {
+    font-size: 58px;
+  }
 
+}
+
+@media only screen and (max-width: 410px){
+
+  .canadian-heading {
+    font-size: 44px;
+  }
 
 }

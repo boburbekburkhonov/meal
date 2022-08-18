@@ -65,7 +65,7 @@
   background: #ffffff;
   border: 2px solid #393C49;
   border-radius: 8px;
-  max-width: 220px;
+  max-width: 320px;
   width: 100%;
   font-family: 'Barlow';
   text-align: center;
@@ -77,6 +77,22 @@
 .sitenav-input:focus {
   outline: none;
   border: 2px solid dodgerblue;
+}
+
+.sitenav-search {
+  text-decoration: none;
+  padding: 12px 0;
+  background: #FFA844;
+  border: 2px solid #393C49;
+  border-radius: 8px;
+  max-width: 220px;
+  width: 100%;
+  font-family: 'Barlow';
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #252836;
 }
 
 .sitenav{

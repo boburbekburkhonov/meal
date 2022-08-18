@@ -24,8 +24,8 @@ function index(props) {
     <section className='canadian-one'>
       <div className="container">
         {data.map((item, index) => {
-          return <>
-          <div key={item.idMeal} className='one d-flex flex-column mx-auto'>
+          return <div key={item.idMeal}>
+          <div className='one d-flex flex-column mx-auto'>
             <img className='canadian-one-img rounded-5' src={item.strMealThumb} alt="canadian-food" />
             <div className='d-flex'>
             <h2 className='one-heading'>Meal name:</h2>
@@ -45,7 +45,7 @@ function index(props) {
               <h2 className='one-heading-into'>Instructions</h2>
               <p className='one-desc-into'>{item.strInstructions}</p>
             </div>
-            </>
+            </div>
         })}
 
         <button onClick={() => navigate(-1)} className='back-btn'>Back</button>

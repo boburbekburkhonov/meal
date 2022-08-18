@@ -17,7 +17,8 @@ function index(props) {
     const req = await Get.By_Canadian;
     setResult(req.data.meals)
   }
-  // console.log(search);
+
+
   useEffect(() => {
     a()
   }, []);
@@ -25,14 +26,13 @@ function index(props) {
   const qidiruv = async(str) =>{
     setLoader(false)
     const req = await Get.By_Searchs(str);
-    setSearch(req.data.meals)
-    setLoader(true)
+    if(req.data.meals === null){
+      setLoader(false)
+    } else {
+      setSearch(req.data.meals)
+      setLoader(true)
+    }
   }
-
-
-  // useEffect(() => {
-  //   qidiruv()
-  // }, [])
 
   return (
     <>

@@ -4,7 +4,6 @@ import Hero from '../Hero'
 import './main.css'
 
 function index({result}) {
-
   return (
     <>
     <Hero />

@@ -3,6 +3,7 @@ import Header from '../Header'
 import AllSections from '../AllSections'
 import CanadianMealOne from '../Canadian-Meal-One'
 import Search from '../Search'
+import CountryMeals from '../CountryMeals'
 import dataContext from '../Context/dataContext';
 import {Routes, Route} from 'react-router-dom'
 import Footer from '../Footer'
@@ -13,6 +14,8 @@ function index(props) {
   const[seaFood, setSeaFood] = useState([])
   const[loader, setLoader] = useState(false)
   const[search, setSearch] = useState([]);
+  const[countrys, setCountry] = useState([])
+  const[loaderCountry, setLoaderCountry] = useState(false)
 
   async function By_Canadian_Foods(){
     const req = await Get.By_Canadian;
@@ -40,16 +43,28 @@ function index(props) {
     }
   }
 
+  async function countries(name) {
+    setLoaderCountry(false)
+    const request = await Get.By_Countrys(name)
+    if(request.data.meals === null){
+      setLoaderCountry(false)
+    } else{
+      setCountry(request.data.meals)
+      setLoaderCountry(true)
+    }
+  }
+
   return (
     <>
-      <dataContext.Provider value={{qidiruv, search, loader, seaFood, result}}>
+      <dataContext.Provider value={{qidiruv, search, loader, seaFood, result, countries, countrys, loaderCountry}}>
         <Header />
         <main>
           <Routes>
 
           <Route path='/search' element={<Search/>} />
           <Route path='/' element={<AllSections />} />
-          <Route path='/:id' element={<CanadianMealOne />} />
+          <Route path='/home/:id' element={<CanadianMealOne />} />
+          <Route path='/:country' element={<CountryMeals />} />
           </Routes>
         </main>
       </dataContext.Provider>

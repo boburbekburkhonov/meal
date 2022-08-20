@@ -6,6 +6,8 @@ const By_Canadian_Foods = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=
 
 const By_Canadian_Foods_Id = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i';
 
+const By_Country = 'https://www.themealdb.com/api/json/v1/1/filter.php?a';
+
 const Seafoods_Meals = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood'
 
 
@@ -16,7 +18,9 @@ const Get = {
 
   By_Canadian_Id: (strId) => axios.get(`${By_Canadian_Foods_Id}=${strId}`),
 
-  By_Searchs: (str) =>  axios.get(`${By_Search}=${str}`)
+  By_Searchs: (str) =>  axios.get(`${By_Search}=${str}`),
+
+  By_Countrys: (name) => axios.get(`${By_Country}=${name}`)
 
 }
 

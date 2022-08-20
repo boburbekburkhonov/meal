@@ -21,7 +21,7 @@ function index() {
 
         <ul className='canadian-list list-unstyled m-0 p-0'>
           {result.map(item => {
-            return <Link to={`/${item.idMeal}`} key={item.idMeal} className='canadian-item pt-4'>
+            return <Link to={`/home/${item.idMeal}`} key={item.idMeal} className='canadian-item pt-4'>
                      <img src={item.strMealThumb} alt="canadian" width='279' height='279' />
 
                     <p className='canadian-desc mt-3'>
@@ -32,8 +32,6 @@ function index() {
         </ul>
       </div>
     </section>
-
-    <Seafood />
     </>
   );
 }

@@ -19,7 +19,7 @@ function index(props) {
 
         <ul className='seafood-list list-unstyled m-0 p-0'>
           {seaFood.map(item => {
-            return <Link to={`/${item.idMeal}`} key={item.idMeal} className='seafood-item pt-4'>
+            return <Link to={`/home/${item.idMeal}`} key={item.idMeal} className='seafood-item pt-4'>
                      <img src={item.strMealThumb} alt="canadian" width='279' height='279' />
 
                     <p className='seafood-desc mt-3'>

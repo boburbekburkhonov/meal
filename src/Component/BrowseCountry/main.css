@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+.browse {
+  background: #252836;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.browse-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -15px;
+}
+
+.browse-item {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.country-img {
+  max-width: 64px;
+  width: 100px;
+  height: 44px;
+}

@@ -4,11 +4,15 @@ const By_Search = 'https://www.themealdb.com/api/json/v1/1/search.php?s'
 
 const By_Canadian_Foods = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian';
 
-const By_Canadian_Foods_Id = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i'
+const By_Canadian_Foods_Id = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i';
+
+const Seafoods_Meals = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood'
 
 
 const Get = {
   By_Canadian: axios.get(`${By_Canadian_Foods}`),
+
+  Seafoods: axios.get(Seafoods_Meals),
 
   By_Canadian_Id: (strId) => axios.get(`${By_Canadian_Foods_Id}=${strId}`),
 

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
+
+.seafood {
+  background: #252836;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.seafood-heading {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFA844;
+}
+
+.line {
+  max-width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.seafood-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.seafood-item {
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.seafood-item:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.seafood-item:active {
+  opacity: 0.5;
+}
+
+.seafood-desc {
+  margin: 0;
+  max-width: 275px;
+  width: 100%;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px){
+
+  .seafood-heading {
+    font-size: 58px;
+  }
+
+}
+
+@media only screen and (max-width: 410px){
+
+  .seafood-heading {
+    font-size: 44px;
+  }
+
+}

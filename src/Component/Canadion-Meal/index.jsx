@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {Link} from 'react-router-dom'
+import dataContext from '../Context/dataContext';
 import Hero from '../Hero'
+import Seafood from '../Seafood'
 import './main.css'
 
-function index({result}) {
+function index() {
+
+  const {result} = useContext(dataContext)
+
   return (
     <>
     <Hero />
@@ -27,6 +32,8 @@ function index({result}) {
         </ul>
       </div>
     </section>
+
+    <Seafood />
     </>
   );
 }

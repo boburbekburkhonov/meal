@@ -84,6 +84,7 @@ function index(props) {
           </Routes>
         </main>
         <ByName />
+        <Footer />
       </dataContext.Provider>
     </>
   );

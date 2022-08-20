@@ -13,7 +13,7 @@ function index(props) {
 
   useEffect(() => {
     byName(name)
-  }, [])
+  }, [name])
 
   return (
     <section className='byname'>

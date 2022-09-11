@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap');
 
 .header {
-  position: relative;
+  /* position: relative; */
   background: #252836;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -128,12 +128,17 @@
 
 @media only screen and  (max-width: 772px) {
 
+  .header__container {
+    flex-direction: column;
+  }
+
   .sitenav {
     display: none;
   }
 
   .header-hamburger {
     display: inline-block;
+    margin-top: 20px;
   }
 
   .sitenav-input {
@@ -144,7 +149,6 @@
 
 .active {
   border-top: 2px solid rgb(255, 255, 255);
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;

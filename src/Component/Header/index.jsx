@@ -29,7 +29,7 @@ function index(props) {
   }
   return (
     <header className='header'>
-      <div className="container d-flex align-items-center justify-content-between">
+      <div className="container header__container d-flex align-items-center justify-content-between">
         <a className='header-link-logo text-decoration-none' href="#">
           <img className='header-img' src={logo} alt="logo" width='296' height='41' />
         </a>
